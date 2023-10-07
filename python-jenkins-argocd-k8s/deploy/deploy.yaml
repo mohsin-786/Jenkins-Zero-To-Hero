@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo
-        image: mohsin01/django-todo:v29
+        image: mohsin01/django-todo:v5
         ports:
         - containerPort: 8000
