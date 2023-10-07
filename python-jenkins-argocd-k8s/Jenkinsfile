@@ -38,7 +38,7 @@ pipeline {
                         sh '''
                         cd python-jenkins-argocd-k8s/deploy/
                         cat deploy.yaml
-                        sed -i "s/:v29/:${BUILD_NUMBER}/g" deploy.yaml
+                        sed -i "s/:5/:${BUILD_NUMBER}/g" deploy.yaml
                         cat deploy.yaml
                         git add deploy.yaml
                         git commit -m 'Updated the deploy yaml | Jenkins Pipeline'
