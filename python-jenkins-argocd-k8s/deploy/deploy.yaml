@@ -1,21 +1,21 @@
-apiVersion:9 apps/v1
-kind:9 Deployment
-metadata:9
-  name:9 todo-app
-  labels:9
-    app:9 nginx
-spec:9
-  replicas:9 3
-  selector:9
-    matchLabels:9
-      app:9 nginx
-  template:9
-    metadata:9
-      labels:9
-        app:9 nginx
-    spec:9
-      containers:9
-      - name:9 todo
-        image:9 mohsin01/django-todo:9
-        ports:9
-        - containerPort:9 8000
+apiVersion:10 apps/v1
+kind:10 Deployment
+metadata:10
+  name:10 todo-app
+  labels:10
+    app:10 nginx
+spec:10
+  replicas:10 3
+  selector:10
+    matchLabels:10
+      app:10 nginx
+  template:10
+    metadata:10
+      labels:10
+        app:10 nginx
+    spec:10
+      containers:10
+      - name:10 todo
+        image:10 mohsin01/django-todo:10
+        ports:10
+        - containerPort:10 8000
