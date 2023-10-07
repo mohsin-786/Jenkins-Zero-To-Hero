@@ -1,21 +1,21 @@
 apiVersion:10 apps/v1
-kind:10 Deployment
-metadata:10
-  name:10 todo-app
-  labels:10
-    app:10 nginx
-spec:10
-  replicas:10 3
-  selector:10
-    matchLabels:10
-      app:10 nginx
-  template:10
-    metadata:10
-      labels:10
-        app:10 nginx
-    spec:10
-      containers:10
-      - name:10 todo
-        image:10 mohsin01/django-todo:10
-        ports:10
-        - containerPort:10 8000
+kind: Deployment
+metadata:
+  name: todo-app
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: todo
+        image: mohsin01/django-todo:10
+        ports:
+        - containerPort: 8000
